@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>12a8d50e-01b3-41d1-97c3-2d0e0b8eba16</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ind_Mel.py</StartupFile>
+    <StartupFile>ind.exe.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ind_Mel.py" />
+    <Compile Include="ind.exe.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
