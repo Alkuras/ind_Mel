@@ -1,5 +1,7 @@
+
 from statistics import *
 from random import *
+
 def patsiendid_D(nimed:list,D:list)->list:
     """Составляет или дополняет  список пациентов и их результатов анализов на витамин D
     :nimed:list: Список имён
@@ -48,7 +50,27 @@ try:
             D_avg= mean(D)
             print(f"Средний показатель витамина D {D_avg}")
         elif v==3:
-            print(3)
+            T=int(input("Сколько пациентов с наилучшими показателями хотите видеть?: "))
+            if T>0:
+             
+             
+                 a=0 
+                 pal=D.copy()
+                 pal.sort(reverse=True)
+                 nam=[]
+                 for l in range(T):
+                
+                    ind=D.index(pal[a])
+
+                    nam.append(nimed[ind])
+                    a+=1
+ 
+                 print("Лучшие")
+                 for x in range(T):
+
+                        print(f"{nam[x]} - {pal[x]}")
+            else:
+                    print("Напиши число")
         elif v==4:
             name=input("Имя пациента:  ")
             leitud=False
@@ -60,6 +82,7 @@ try:
                 print("Данных нет")
         elif v==5:
             break
+            
 
        
         print(D)
